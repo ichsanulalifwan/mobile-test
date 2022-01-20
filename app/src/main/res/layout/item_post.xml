@@ -25,8 +25,8 @@
             android:id="@+id/tv_post_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_semibold"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -55,7 +55,7 @@
             app:layout_constraintBottom_toBottomOf="@id/img_users_icon"
             app:layout_constraintStart_toEndOf="@id/img_users_icon"
             app:layout_constraintTop_toTopOf="@id/img_users_icon"
-            tools:text="User Name" />
+            tools:text="@string/user_name_example" />
 
         <ImageView
             android:id="@+id/img_company_icon"
@@ -77,7 +77,7 @@
             app:layout_constraintBottom_toBottomOf="@id/img_company_icon"
             app:layout_constraintStart_toEndOf="@id/img_company_icon"
             app:layout_constraintTop_toTopOf="@id/img_company_icon"
-            tools:text="Company Name" />
+            tools:text="@string/company_example" />
 
         <TextView
             android:id="@+id/tv_post_body"

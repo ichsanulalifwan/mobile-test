@@ -13,4 +13,6 @@
     <string name="user_icon">User Icon</string>
     <string name="company_icon">Company Icon</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dolor a elit dapibus efficitur. Aliquam bibendum, arcu ac semper ullamcorper, est lectus finibus libero, nec commodo dui erat sollicitudin lorem. Nullam condimentum enim quam, eu pulvinar neque lobortis et. Quisque maximus condimentum odio, dapibus feugiat nisi ultrices a.</string>
+    <string name="company_example">Company Name</string>
+    <string name="user_name_example">User Name</string>
 </resources>
