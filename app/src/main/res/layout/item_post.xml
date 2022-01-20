@@ -22,10 +22,11 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tv_post_title"
+            android:id="@+id/tv_posts_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_semibold"
             android:textColor="@color/black"
@@ -33,17 +34,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Post Title" />
+            tools:text="@string/post_title_example" />
 
         <ImageView
             android:id="@+id/img_users_icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="4dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="2dp"
             android:contentDescription="@string/user_icon"
             android:src="@drawable/ic_baseline_person_24"
-            app:layout_constraintStart_toStartOf="@id/tv_post_title"
-            app:layout_constraintTop_toBottomOf="@id/tv_post_title" />
+            app:layout_constraintStart_toStartOf="@id/tv_posts_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_posts_title" />
 
         <TextView
             android:id="@+id/tv_users_name"
@@ -59,8 +60,8 @@
 
         <ImageView
             android:id="@+id/img_company_icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
             android:layout_marginStart="16sp"
             android:contentDescription="@string/company_icon"
             android:src="@drawable/ic_round_company_24"
@@ -80,21 +81,22 @@
             tools:text="@string/company_example" />
 
         <TextView
-            android:id="@+id/tv_post_body"
+            android:id="@+id/tv_posts_body"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
             android:ellipsize="end"
             android:fontFamily="@font/poppins"
             android:gravity="start"
             android:maxLines="2"
-            android:textSize="14sp"
             android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="@id/tv_post_title"
-            app:layout_constraintStart_toStartOf="@id/tv_post_title"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tv_posts_title"
+            app:layout_constraintStart_toStartOf="@id/tv_posts_title"
             app:layout_constraintTop_toBottomOf="@+id/img_users_icon"
             tools:text="@string/lorem_ipsum" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

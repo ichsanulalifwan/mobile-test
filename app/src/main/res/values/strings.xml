@@ -15,4 +15,8 @@
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dolor a elit dapibus efficitur. Aliquam bibendum, arcu ac semper ullamcorper, est lectus finibus libero, nec commodo dui erat sollicitudin lorem. Nullam condimentum enim quam, eu pulvinar neque lobortis et. Quisque maximus condimentum odio, dapibus feugiat nisi ultrices a.</string>
     <string name="company_example">Company Name</string>
     <string name="user_name_example">User Name</string>
+    <string name="post_title_example">Post Title</string>
+    <string name="comment_example">Comments User Example</string>
+    <string name="comment_author_example">Comment author name</string>
+    <string name="comments">Comments</string>
 </resources>
