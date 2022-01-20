@@ -9,4 +9,8 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="cd_border">Border Item</string>
+    <string name="user_icon">User Icon</string>
+    <string name="company_icon">Company Icon</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dolor a elit dapibus efficitur. Aliquam bibendum, arcu ac semper ullamcorper, est lectus finibus libero, nec commodo dui erat sollicitudin lorem. Nullam condimentum enim quam, eu pulvinar neque lobortis et. Quisque maximus condimentum odio, dapibus feugiat nisi ultrices a.</string>
 </resources>
