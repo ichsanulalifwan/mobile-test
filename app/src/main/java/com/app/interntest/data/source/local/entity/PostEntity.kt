@@ -10,7 +10,7 @@ data class PostEntity(
     @PrimaryKey
     @NonNull
     @ColumnInfo(name = "post_id")
-    var postId: Int,
+    val postId: Int,
 
     @ColumnInfo(name = "user_id")
     val userId: Int,

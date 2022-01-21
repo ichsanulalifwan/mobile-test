@@ -10,7 +10,7 @@ data class CommentEntity(
     @PrimaryKey
     @NonNull
     @ColumnInfo(name = "id")
-    var id: Int,
+    val id: Int,
 
     @ColumnInfo(name = "post_id")
     val postId: Int,

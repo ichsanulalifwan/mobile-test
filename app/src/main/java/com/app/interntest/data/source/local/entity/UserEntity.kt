@@ -10,7 +10,7 @@ data class UserEntity(
     @PrimaryKey
     @NonNull
     @ColumnInfo(name = "id")
-    var id: Int,
+    val id: Int,
 
     @ColumnInfo(name = "name")
     val name: String,
