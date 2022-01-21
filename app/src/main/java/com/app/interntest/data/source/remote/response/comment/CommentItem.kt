@@ -1,4 +1,4 @@
-package com.app.interntest.response
+package com.app.interntest.data.source.remote.response.comment
 
 
 import com.google.gson.annotations.SerializedName

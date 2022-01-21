@@ -1,9 +1,9 @@
-package com.app.interntest.response
+package com.app.interntest.data.source.remote.response.user
 
 
 import com.google.gson.annotations.SerializedName
 
-data class User(
+data class UserItem(
     @SerializedName("address")
     val address: Address,
     @SerializedName("company")
@@ -14,6 +14,10 @@ data class User(
     val id: Int,
     @SerializedName("name")
     val name: String,
+    @SerializedName("phone")
+    val phone: String,
     @SerializedName("username")
-    val username: String
+    val username: String,
+    @SerializedName("website")
+    val website: String
 )
