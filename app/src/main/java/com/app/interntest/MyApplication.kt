@@ -1,6 +1,9 @@
 package com.app.interntest
 
 import android.app.Application
+import com.app.interntest.core.di.databaseModule
+import com.app.interntest.core.di.networkModule
+import com.app.interntest.core.di.repositoryModule
 import com.app.interntest.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
