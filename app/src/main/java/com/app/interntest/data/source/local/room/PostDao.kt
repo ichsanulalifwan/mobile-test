@@ -24,8 +24,8 @@ interface PostDao {
     suspend fun insertPost(post: List<PostEntity>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertUser(post: List<UserEntity>)
+    suspend fun insertUser(user: List<UserEntity>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertComment(post: List<CommentEntity>)
+    suspend fun insertComment(comment: List<CommentEntity>)
 }
