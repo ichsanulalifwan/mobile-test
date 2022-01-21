@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.interntest.core.adapter.CommentAdapter
 import com.app.interntest.core.data.Resource
 import com.app.interntest.core.domain.model.Post
-import com.app.interntest.core.domain.model.User
 import com.app.interntest.databinding.FragmentDetailPostBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -49,8 +48,12 @@ class DetailPostFragment : Fragment() {
 
             // Get Data
             val postData = args.post
-            populateData(postData)
-            getComments(postData.postId)
+            if (postData != null) {
+                toolbar.title = postData.title
+                populateData(postData)
+                getComments(postData.postId)
+//                getUserData(postData.userId)
+            }
 
             showProgressBar(true)
             setupRecyclerView()
@@ -63,12 +66,10 @@ class DetailPostFragment : Fragment() {
         with(binding) {
             tvPostsTitle.text = post.title
             tvPostsBody.text = post.body
-            tvUserName.text = getUserData(post.userId)?.name
         }
     }
 
-    private fun getUserData(id: Int): User? {
-        var userData: User? = null
+    private fun getUserData(id: Int) {
         viewModel.setSelectedUser(id)
         viewModel.user.observe(viewLifecycleOwner) { user ->
             if (user != null) {
@@ -76,7 +77,7 @@ class DetailPostFragment : Fragment() {
                     is Resource.Loading<*> -> showProgressBar(true)
                     is Resource.Success<*> -> {
                         showProgressBar(false)
-                        userData = user.data
+                        binding.tvUserName.text = user.data?.name ?: ""
                     }
                     is Resource.Error<*> -> {
                         showProgressBar(false)
@@ -89,8 +90,6 @@ class DetailPostFragment : Fragment() {
                 }
             }
         }
-
-        return userData
     }
 
     // Init and setup recyclerview and adapter for comments

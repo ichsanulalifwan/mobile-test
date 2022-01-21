@@ -21,6 +21,7 @@
         tools:layout="@layout/fragment_detail_post">
         <argument
             android:name="post"
-            app:argType="com.app.interntest.core.domain.model.Post" />
+            app:argType="com.app.interntest.core.domain.model.Post"
+            app:nullable="true" />
     </fragment>
 </navigation>
