@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.app.interntest.ListPostFragment"
+        android:name="com.app.interntest.ui.ListPostFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_list_post">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.app.interntest.DetailPostFragment"
+        android:name="com.app.interntest.ui.DetailPostFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_detail_post">
 

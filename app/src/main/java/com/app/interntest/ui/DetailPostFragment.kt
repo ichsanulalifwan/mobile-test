@@ -1,4 +1,4 @@
-package com.app.interntest
+package com.app.interntest.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,14 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.app.interntest.databinding.FragmentListPostBinding
+import com.app.interntest.databinding.FragmentDetailPostBinding
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
-class ListPostFragment : Fragment() {
+class DetailPostFragment : Fragment() {
 
-    private var _binding: FragmentListPostBinding? = null
+    private var _binding: FragmentDetailPostBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -21,13 +18,14 @@ class ListPostFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentListPostBinding.inflate(inflater, container, false)
+        _binding = FragmentDetailPostBinding.inflate(inflater, container, false)
         return binding.root
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
     }
 
     override fun onDestroyView() {
